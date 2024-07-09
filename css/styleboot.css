@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    /*background-color: #bde0fe;*/
 
 }
 
@@ -29,8 +28,6 @@ img {
     padding: 0rem;
     max-width: 100%;
     height: auto;
-    /*   height: 100vh; Altura del contenedor igual a la altura de la ventana */
-
 }
 
 .container {
@@ -97,7 +94,6 @@ h1 {
 
 h2 {
     font-family: "Rock Salt";
-    /*font-weight: bold;*/
     font-size: 30px;
     padding-top: 1rem;
     text-align: center;
@@ -111,7 +107,6 @@ h2 {
     flex-direction: row;
     /* Cambiar el orden de las cosas*/
     flex-wrap: nowrap;
-    /* flex-flow: row nowrap */
     justify-content: center;
     /*Como se alinea co su padre :space-between;*/
     align-items: start;
