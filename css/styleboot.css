@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('/fonts/RockSalt-Regular.ttf');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    /*background-color: #bde0fe;*/
+
+}
+
+a {
+    /* Remueve Link*/
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.nav {
+    padding: 0rem;
+    max-width: 100%;
+    height: auto;
+    /*   height: 100vh; Altura del contenedor igual a la altura de la ventana */
+
+}
+
+.container {
+    text-align: center;
+    /* Centra horizontalmente */
+    height: auto;
+    /* Altura del contenedor igual a la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+.container-menu {
+    width: 80%;
+    padding-left: 10%;
+    text-align: center;
+    /* Centra horizontalmente */
+    height: auto;
+    /* Altura del contenedor igual a la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+
+}
+
+.logo {
+    width: 100%;
+    height: 30rem;
+    justify-content: center;
+    /*Como se alinea co su padre :space-between;*/
+    align-items: center;
+}
+
+.logo2 {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    /*Como se alinea co su padre :space-between;*/
+    align-items: center;
+}
+
+.logo3 {
+    width: 80%;
+    height: 30%;
+    justify-content: center;
+    /*Como se alinea co su padre :space-between;*/
+    align-items: center;
+    display: block;
+
+}
+
+
+h1 {
+    font-family: "Rock Salt";
+    font-size: 50px;
+    /*font-weight: bold;*/
+    padding-top: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Rock Salt";
+    /*font-weight: bold;*/
+    font-size: 30px;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    /*Todo se pone en horizontal*/
+    /*los elementos flex- funcionan, si el display es flex*/
+    flex-direction: row;
+    /* Cambiar el orden de las cosas*/
+    flex-wrap: nowrap;
+    /* flex-flow: row nowrap */
+    justify-content: center;
+    /*Como se alinea co su padre :space-between;*/
+    align-items: start;
+    gap: 2rem;
+    /* Espacio entre elementos*/
+    border-style: none;
+
+
+}
+
+.menu-item {
+    background-color: white;
+    color: black;
+    font-family: rock salt;
+    padding: 1rem;
+}
+
+
+.productos {
+    height: 80px;
+}
+
+.nosotros {
+    height: 80px;
+}
+
+
+article {
+    justify-content: center;
+    width: 80%;
+    color: black;
+    justify-content: center;
+    padding: 1rem;
+    font-family: rock salt;
+    text-align: center;
+    /* Centra horizontalmente */
+    height: auto;
+    /* Altura del contenedor igual a la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    font-size: 20px;
+}
+
+.footer {
+    list-style-type: none;
+
+}
