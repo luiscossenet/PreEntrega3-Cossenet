@@ -36,35 +36,42 @@
 
 <body>
     <header>
-        <nav class="container position-relative">
-            <h1><a href="../index.html">Magico Aprendizaje</a></h1>
-            <div class="row">
-                <img class="logo" src="../img/imgmagicobq.jpeg" alt="Magico Aprendizaje">
-            </div>
-
-            <div class="container position-relative">
-                <ul class="row">
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="../index.html"> Servicios</a></li>
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="./clubdelectura.html"
-                            target="_self">Club de Lectura</a></li>
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="./clubderefuerzos.html"
-                            target="_self">Club de Refuerzos</a></li>
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="./clubtardesmagicas.html"
-                            target="_self">Club Tardes Magicas</a></li>
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="./clubtareasdirigidas.html"
-                            target="_self">Club Tareas Dirigidas</a></li>
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="./clubtallerintegrado.html"
-                            target="_self">Club Taller Integrado</a></li>
-                    <li class="col-lg-4 col-md-3 col-sm-12"><a class="nav-link" href="./contactenos.html"
-                            target="_blank">Contactenos</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Magico Aprendizaje</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/clubdelectura.html">Club de Lectura</a></li>
+                                <li><a class="dropdown-item" href="../pages/clubderefuerzos.html">Club de Refuerzos</a></li>
+                                <li><a class="dropdown-item" href="../pages/clubtardesmagicas.html">Club Tardes Mágicas</a></li>
+                                <li><a class="dropdown-item" href="../pages/clubtareasdirigidas.html">Club Tareas Dirigidas</a></li>
+                                <li><a class="dropdown-item" href="../pages/clubtallerintegrado.html">Club Taller Integrado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contactenos.html" target="_blank">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
     <main>
-        <nav class="container position-relative">
-            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+        <nav class="container position-relative"">
+             <form class="responsive-image" action="" method="post" enctype="application/x-www-form-urlencoded">
                 <label for="name">Nombre</label>
                 <input type="text" maxlength="100" placeholder="Ingresa Nombre" id="name">
                 <br>
@@ -96,13 +103,46 @@
             </form>
         </nav>
     </main>
-    <footer class="container position-relative">
-        <nav>
-            <img class="row" src="../img/footer1.jpg">
-            <img class="row" src="../img/footer2.jpg">
-            <img class="row" src="../img/footer3A.jpg">
-        </nav>
-        <p>&copy; 2024 Mágico Aprendizaje. Todos los derechos reservados.</p>
+    <footer>
+
+        <div class="line">
+            <a class="aicom_web whatsapp-link"
+                href="https://api.whatsapp.com/send?phone=+573124084212&text=Hola,%20estoy%20interesado%20en%20los%20servicios%20de%20Mágico%20Aprendizaje."
+                target="_blank">
+                <img src="../img/whatsapp_icon_2.png" alt="Image 1" width="30" height="30">
+                <span>+57 312 4084212</span>
+            </a>
+        </div>
+
+        <div class="line">
+            <a class="aicom_web facebook-link" href="https://www.facebook.com/magicoaprendizajebq" target="_blank">
+                <span>magicoaprendizajebq</span>
+                <img src="../img/facebook_icon.png" alt="Image 2" width="30" height="30">
+            </a>
+        </div>
+        <div class="line">
+            <a class="aicom_web instagram-link" href="https://www.instagram.com/magicoaprendizajebq" target="_blank">
+                <img src="../img/instagram_icon.png" alt="Image 3" width="30" height="30">
+                <span>magicoaprendizajebq</span>
+            </a>
+        </div>
+
+        <div class="line">
+            <a class="aicom_web mail-link" href="mailto:info@magicoaprendizaje.com">
+                <span>info@magicoaprendizaje.com</span>
+                <img src="../img/mail_icon.png" alt="Image 4" width="30" height="30">
+            </a>
+
+        </div>
+        <div class="line">
+            <a class="aicom_web web-link" href="https://www.magicoaprendizaje.com" target="_blank">
+                <img src="../img/www_icon.png" alt="Image 4" width="30" height="30">
+                <span>www.magicoaprendizaje.com</span>
+            </a>
+        </div>
+        <div class="line">
+            <p>&copy; 2024 Mágico Aprendizaje. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

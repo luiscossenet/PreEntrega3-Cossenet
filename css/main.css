@@ -13,7 +13,8 @@
 .a_web {
     /* Remueve Link*/
     text-decoration: none;
-    color: white;
+    font-family: "Noto Sans";
+    color: black;
     font-weight: bold;
     text-align: center;
     justify-content: center;
@@ -26,7 +27,27 @@
     font-weight: bold;
     text-align: center;
     justify-content: center;
+    font-family: "Noto Sans";
+}
 
+.whatsapp-link:hover {
+    background-color: #1DA851;
+}
+
+.facebook-link:hover {
+    background-color: #2d4373;
+}
+
+.instagram-link:hover {
+    background-color: #bc2a8d;
+}
+
+.mail-link:hover {
+    background-color:rgba(0, 0, 0, .15);
+}
+
+.web-link:hover {
+    background-color:rgba(0, 0, 0, .15);
 }
 
 img {
@@ -49,8 +70,7 @@ img {
     /* Centra horizontalmente */
     align-items: center;
     position: relative;
-
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
     /* Centra verticalmente */
 }
 
@@ -66,6 +86,21 @@ img {
     /* Centra horizontalmente */
     align-items: center;
     /* Centra verticalmente */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
 }
 
 .logo {
@@ -190,12 +225,14 @@ article {
 }
 
 footer {
-   background: url('../img/footer3A.jpg') no-repeat center center;
-    background-size: 80%;
+    background: url('/img/footer3A.jpg') no-repeat center center;
+    background-size:cover;
     height: 30%;
     color: white;
     text-align: center;
     padding: 20px;
+    flex-direction: column;
+    
 }
 
 .contact-container {
@@ -213,7 +250,7 @@ footer {
     margin: 10px 0;
 }
 
-.contact-item  {
+.contact-item {
     width: 24px;
     /* Tamaño de los iconos */
     height: 24px;
@@ -242,13 +279,106 @@ footer {
 .spacer {
     height: 20px;
 }
+
 .line {
     display: flex;
     font-family: "Noto Sans", sans-serif;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
 }
-.line img, .line i {
+
+.line img,
+.line i {
     margin: 0 10px;
+}
+
+/***/
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/***/
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    footer {
+        background-size: cover; /* Asegura que la imagen cubra el área del footer */
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
+    }
+
+    .line img {
+        width: 20px; /* Ajusta el tamaño de los iconos para móviles */
+        height: 20px; 
+    }
+
+    .line span {
+        font-size: 0.9em; /* Ajusta el tamaño del texto para móviles */
+    }
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        height: 500px; /* Ajusta la altura según sea necesario para pantallas grandes */
+    }
+
+    .responsive-image {
+        height: 100%;
+        width: auto; /* Mantiene la proporción de la imagen */
+    }
 }

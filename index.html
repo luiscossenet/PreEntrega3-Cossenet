@@ -48,23 +48,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/clubdelectura.html">Club de Lectura</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/clubderefuerzos.html">Club de Refuerzos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/clubtardesmagicas.html">Club Tardes Magicas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/clubtareasdirigidas.html">Club Tareas Dirigidas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/clubtallerintegrado.html">Club Taller Integrado</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/clubdelectura.html">Club de Lectura</a></li>
+                                <li><a class="dropdown-item" href="./pages/clubderefuerzos.html">Club de Refuerzos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/clubtardesmagicas.html">Club Tardes
+                                        Mágicas</a></li>
+                                <li><a class="dropdown-item" href="./pages/clubtareasdirigidas.html">Club Tareas
+                                        Dirigidas</a></li>
+                                <li><a class="dropdown-item" href="./pages/clubtallerintegrado.html">Club Taller
+                                        Integrado</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contactenos.html" target="_blank">Contactenos</a>
@@ -73,12 +71,13 @@
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
         <section id="section" class="container position-relative">
             <h1><a class="a_web" href="index.html">Magico Aprendizaje</a></h1>
-            <div class="container-lcc">
-                <img class="logo" src="./img/imgmagicobq.jpeg" alt="Magico Aprendizaje">
+            <div class="image-container">
+                <img class="responsive-image" src="./img/imgmagicobq.jpeg" alt="Magico Aprendizaje">
             </div>
             <h2>Bienvenidos</h2>
             <article>
@@ -86,41 +85,46 @@
             </article>
         </section>
     </main>
-
     <footer>
+
         <div class="line">
-            <a class="a_web" href="https://api.whatsapp.com/send?phone=+573124084212">
+            <a class="aicom_web whatsapp-link"
+                href="https://api.whatsapp.com/send?phone=+573124084212&text=Hola,%20estoy%20interesado%20en%20los%20servicios%20de%20Mágico%20Aprendizaje."
+                target="_blank">
                 <img src="./img/whatsapp_icon_2.png" alt="Image 1" width="30" height="30">
                 <span>+57 312 4084212</span>
             </a>
         </div>
-      
+
         <div class="line">
-            <i class="icon2"></i>
-            <img src="./img/facebook_icon.png" alt="Image 2" width="30" height="30">
-            <span>magicoaprendizajebq</span>
-            <div style="width: 10px;"></div>
-            <i class="icon3"></i>
-            <span>magicoaprendizajebq</span>
-            <img src="./img/instagram_icon.png" alt="Image 3" width="30" height="30">
+            <a class="aicom_web facebook-link" href="https://www.facebook.com/magicoaprendizajebq" target="_blank">
+                <span>magicoaprendizajebq</span>
+                <img src="./img/facebook_icon.png" alt="Image 2" width="30" height="30">
+            </a>
+        </div>
+        <div class="line">
+            <a class="aicom_web instagram-link" href="https://www.instagram.com/magicoaprendizajebq" target="_blank">
+                <img src="./img/instagram_icon.png" alt="Image 3" width="30" height="30">
+                <span>magicoaprendizajebq</span>
+            </a>
         </div>
 
         <div class="line">
-            <a class="a_web" href="mailto:info@magicoaprendizaje.com">
+            <a class="aicom_web mail-link" href="mailto:info@magicoaprendizaje.com">
                 <span>info@magicoaprendizaje.com</span>
                 <img src="./img/mail_icon.png" alt="Image 4" width="30" height="30">
             </a>
-            <div style="width: 10px;"></div>
 
-        </div>        
+        </div>
         <div class="line">
-            <a class="a_web" href="https://www.magicoaprendizaje.com" target="_blank">
-            <span>www.magicoaprendizaje.com</span>
-            <img src="./img/www_icon.png" alt="Image 5" width="30" height="30">
+            <a class="aicom_web web-link" href="https://www.magicoaprendizaje.com" target="_blank">
+                <img src="./img/www_icon.png" alt="Image 4" width="30" height="30">
+                <span>www.magicoaprendizaje.com</span>
             </a>
         </div>
+        <div class="line">
             <p>&copy; 2024 Mágico Aprendizaje. Todos los derechos reservados.</p>
-        
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
