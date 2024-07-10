@@ -43,11 +43,11 @@
 }
 
 .mail-link:hover {
-    background-color:rgba(0, 0, 0, .15);
+    background-color: rgba(0, 0, 0, .15);
 }
 
 .web-link:hover {
-    background-color:rgba(0, 0, 0, .15);
+    background-color: rgba(0, 0, 0, .15);
 }
 
 img {
@@ -100,7 +100,8 @@ img {
 .responsive-image {
     max-width: 100%;
     height: auto;
-    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
+    object-fit: cover;
+    /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
 }
 
 .logo {
@@ -226,13 +227,13 @@ article {
 
 footer {
     background: url('../img/footer3A.jpg') no-repeat center center;
-    background-size:cover;
+    background-size: cover;
     height: 30%;
     color: white;
     text-align: center;
     padding: 20px;
     flex-direction: column;
-    
+
 }
 
 .contact-container {
@@ -352,33 +353,89 @@ footer {
     display: block;
 }
 
+/* Estilo formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-/***/
+.contact-form label {
+    margin-top: 1rem;
+    display: block;
+}
+
+
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"],
+.contact-form input[type="button"] {
+    width: auto;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover,
+.contact-form input[type="button"]:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1rem;
+    }
+}
+
+/* Fin Estilo formulario de contacto */
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
     footer {
-        background-size: cover; /* Asegura que la imagen cubra el área del footer */
-        height: auto; /* Ajusta la altura automáticamente según el contenido */
+        background-size: cover;
+        /* Asegura que la imagen cubra el área del footer */
+        height: auto;
+        /* Ajusta la altura automáticamente según el contenido */
     }
 
     .line img {
-        width: 20px; /* Ajusta el tamaño de los iconos para móviles */
-        height: 20px; 
+        width: 20px;
+        /* Ajusta el tamaño de los iconos para móviles */
+        height: 20px;
     }
 
     .line span {
-        font-size: 0.9em; /* Ajusta el tamaño del texto para móviles */
+        font-size: 0.9em;
+        /* Ajusta el tamaño del texto para móviles */
     }
 }
 
 @media (min-width: 768px) {
     .image-container {
-        height: 500px; /* Ajusta la altura según sea necesario para pantallas grandes */
+        height: 500px;
+        /* Ajusta la altura según sea necesario para pantallas grandes */
     }
 
     .responsive-image {
         height: 100%;
-        width: auto; /* Mantiene la proporción de la imagen */
+        width: auto;
+        /* Mantiene la proporción de la imagen */
     }
 }
