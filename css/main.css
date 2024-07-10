@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Noto Sans";
-    src: url("/fonts/NotoSans-VariableFont_wdth.ttf");
+    src: url("../fonts/NotoSans-VariableFont_wdth.ttf");
     font-weight: 400;
 }
 
@@ -225,7 +225,7 @@ article {
 }
 
 footer {
-    background: url('/img/footer3A.jpg') no-repeat center center;
+    background: url('../img/footer3A.jpg') no-repeat center center;
     background-size:cover;
     height: 30%;
     color: white;
